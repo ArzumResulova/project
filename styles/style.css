@@ -91,7 +91,7 @@ section>div .img {
 
 .box2 .img {
     background-image: url(../assets/second.jpg);
- 
+
 }
 
 .box3 .img {
@@ -105,29 +105,68 @@ section>div .img {
 }
 
 
-section h5{
+section h5 {
     font-size: 20px;
 }
 
 
-section p{
+section p {
     font-size: 12px;
 }
 
-section span{
+section span {
     font-size: 12px;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Detail Css Starts @@@@@@@@@@@@@@@@@@@@@@@ */
 
-@media(max-width:900px){
-    header nav{
+.details > div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.details .detail-first{
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Responsive starts */
+
+
+
+@media(max-width:900px) {
+    header nav {
         padding: 0px 50px;
     }
 
 
-section{
-    height: fit-content;
-    padding-top: 20px;
-}
+    section {
+        height: fit-content;
+        padding-top: 20px;
+    }
+
+
+
+
 
 }
