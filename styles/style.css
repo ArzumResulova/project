@@ -33,7 +33,7 @@ header nav ul li {
 
 
 
-section {
+#section-main {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -47,7 +47,7 @@ section {
 
 
 
-section>div {
+#section-main>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,6 +59,10 @@ section>div {
 }
 
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 .txt {
     display: flex;
@@ -71,7 +75,7 @@ section>div {
 }
 
 
-section>div .img {
+#section-main>div .img {
     background-position: center;
     background-size: cover;
     height: 150px;
@@ -104,38 +108,71 @@ section>div .img {
 
 }
 
-
-section h5 {
+#section-main h5 {
     font-size: 20px;
 }
 
 
-section p {
+#section-main p {
     font-size: 12px;
 }
 
-section span {
+#section-main span {
     font-size: 12px;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Detail Css Starts @@@@@@@@@@@@@@@@@@@@@@@ */
 
-.details > div {
+main .details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.details>div {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    
 }
 
+.details {
+    display: flex;
+    height: 90vh;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
+.details .detail-first img {
 
-.details .detail-first{
+    height: 310px;
+    width: 250px;
 
+    object-fit: cover;
+}
 
+.details .detail-second img {
+
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 
 }
+
+.details .detail-third img {
+
+    height: 310px;
+    width: 250px;
+
+    object-fit: cover;
+}
+
 
 
 
@@ -162,11 +199,81 @@ section span {
 
     section {
         height: fit-content;
-        padding-top: 20px;
+        padding: 0px 20px;
+    }
+
+    .details .detail-first img {
+
+        height: 260px;
+        width: 200px;
+
+    }
+
+    .details .detail-second img {
+
+        height: 169px;
+        width: 150px;
+
+    }
+
+    .details .detail-third img {
+
+        height: 260px;
+        width: 200px;
+
+    }
+
+    .details {
+        display: flex;
+        gap: 20px;
+       
     }
 
 
+    @media(max-width:590px){
 
+    }
+  .details .detail-third img {
 
+      height: 260px;
+      width: 370px;
 
+  }
+
+  .details{
+    padding: 20px 0px;
+  }
 }
+
+@media(max-width:380px){
+
+    .details .detail-first img {
+    
+            height: 260px;
+            width: 340px;
+    
+        }
+    
+        .details .detail-second img {
+    
+            height: 260px;
+            width: 340px;
+    
+        }
+    
+        .details .detail-third img {
+    
+            height: 260px;
+            width: 340px;
+    
+        }
+
+
+
+
+
+        .details{
+            padding: 20px 40px;
+        }
+}
+
