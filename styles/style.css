@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: sans-serif;
+    height: 100px;
+    background-color: black;
+    padding: 0px 200px;
+}
+
+
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+
+header nav ul li {
+    list-style: none;
+}
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    background-image: url(../assets/back.jpg);
+    height: 100vh;
+    background-color: black;
+    background-size: 100%;
+    flex-wrap: wrap;
+}
+
+
+
+section>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 300px;
+    width: 200px;
+    padding: 0px 10px;
+}
+
+
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+    /* padding-bottom: 30px; */
+    align-items: center;
+    text-align: center;
+}
+
+
+section>div .img {
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    bottom: 30px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border: 7px solid white;
+
+}
+
+.box1 .img {
+    background-image: url(../assets/first.jpg);
+
+}
+
+.box2 .img {
+    background-image: url(../assets/second.jpg);
+ 
+}
+
+.box3 .img {
+    background-image: url(../assets/third.jpg);
+
+}
+
+.box4 .img {
+    background-image: url(../assets/forth.jpg);
+
+}
+
+
+section h5{
+    font-size: 20px;
+}
+
+
+section p{
+    font-size: 12px;
+}
+
+section span{
+    font-size: 12px;
+}
+
+
+@media(max-width:900px){
+    header nav{
+        padding: 0px 50px;
+    }
+
+
+section{
+    height: fit-content;
+    padding-top: 20px;
+}
+
+}
