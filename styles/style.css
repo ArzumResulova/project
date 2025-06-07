@@ -197,7 +197,7 @@ main .details{
     }
 
 
-    section {
+    #section-main {
         height: fit-content;
         padding: 0px 20px;
     }
@@ -228,11 +228,11 @@ main .details{
         gap: 20px;
        
     }
-
+}
 
     @media(max-width:590px){
 
-    }
+    
   .details .detail-third img {
 
       height: 260px;
